@@ -1,0 +1,932 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.medidas_contprinc {
+    margin: 0%;
+    padding: 0%;
+    width: 100vw;
+    min-height: 150vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.medidas_contGale {
+    margin: 0%;
+    padding: 0%;
+    width: 100vw;
+    min-height: 150vh;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+/* -----------------------------CABECERA---------------------------------- */
+
+header {
+    display: flex;
+    background-color: black;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-content: center;
+    width: 100vh;
+    height: 20vh;
+    margin-left: 0%;
+}
+
+
+.logo_header {
+    height: 20vh;
+}
+
+h1 {
+    color: white;
+    font-size: 10vh;
+    text-decoration: underline;
+    font-family: 'Londrina Sketch', cursive;
+    padding-top: 20px;    
+    padding-right: 100px;    
+    
+}
+
+
+/* ------------------------------CABECERA---------------------------------*/
+
+
+
+
+/* -----------------------------------MENU---------------------------------- */
+
+
+
+.diseño_fondonav {
+    background-color: rgb(5, 5, 5);
+}
+
+.menu_nav {
+    display: flex;
+    flex-direction: row;
+}
+
+.menu_nav li {
+    list-style: none;
+    padding-top: 15px;
+}
+
+.menu_nav li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 95px;
+}
+.menu_nav li:hover>a {
+    color: rgb(168, 168, 168);
+    text-decoration: underline;
+    font-size: 18px;
+}
+
+
+
+/* ------------------------------------MENU------------------------------------ */
+
+
+
+/* ------------------------------------MAIN------------------------------------ */
+
+
+.main_inicio {
+    background-color: rgb(20, 20, 20);
+    height: 115vh;
+}
+
+.main_galeria {
+    background-color: rgb(20, 20, 20);
+    height: 1200px;
+}
+
+.estilo_imageinic {
+    /* height: 600px;
+    width: 500px; */
+    height: 60vh;
+    width: 100vw;
+}
+
+h2 {
+    color: white;
+    font-size: 6vh;
+    text-decoration: underline;
+    font-family: 'Londrina Sketch', cursive;
+}
+
+p {
+    display: flex;
+    flex-direction: column;
+}
+
+.titulo_album {
+    font-size: 1.3vw;
+    text-decoration: underline;
+    font-style: bold;
+}
+
+.estilo_iframe {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.estilo_carousel {
+    height: 1020px;
+    width: 100%;
+}
+
+.estilo_carousel img {
+    height: 800px;
+    width: 1300px;
+
+}
+/* ------------------------------------MAIN------------------------------------ */
+
+
+
+/* ----------------------------------FOOTER------------------------------------ */
+
+footer {
+    background-color: black;
+    height: 20vh;
+} 
+
+
+.estilo_logoysy {
+    width: 140px;
+    height: 130px;
+}
+
+.estilo_logoig {
+    width: 70px;
+}
+
+.estilo_logotw {
+    width: 85px;
+}
+
+
+
+
+/* -------------------------------MOBILE FIRST---------------------------------------*/
+
+@media screen and (min-width:0px) and (max-width:320px) {
+
+        .medidas_contprinc {
+            margin: 0%;
+            padding: 0%;
+            min-width: 100%;
+            min-height: 170vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            max-height: 120px;
+            border-bottom: black;
+        }
+    
+        header img {
+            grid-area: headerimg;
+            max-height: 90px;
+            width: 90px;
+        }
+    
+        header h1 {
+            grid-area: headerh1;
+            font-size: 25px;
+            padding-left: 50px;
+        }
+
+        nav {
+        grid-area: nav;                
+        }
+
+        .diseño_fondonav {
+            grid-area: nav;
+            background-color: white;       
+            font-size: 13px;    
+            border-bottom: solid grey 2px;
+        }
+
+        .menu_nav li a {
+            color: black;   
+        }
+
+        .main_inicio {
+            display: flex;
+            flex-direction: column;
+            height: 425vh;
+        }
+
+       .main_texto {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+       }
+
+
+        .main_inicio_img {
+            display: flex;
+            width: 100%;
+            margin-bottom: 50px;
+        }
+            
+        
+        .iframe_ant247 {
+            display: flex;
+            flex-direction: column;
+            margin-top: 100px;
+            height: 340px;
+           
+        }
+        
+        .iframe_ham {
+            display: flex;
+            flex-direction: column;
+            margin-top: 100px;
+            height: 340px;
+        }
+        
+        
+        .iframe_tdv {
+            display: flex;
+            flex-direction: column;
+            margin-top: 100px;
+            height: 340px;
+
+        }     
+        
+        .estilo_iframe p {
+            font-size: 20px;
+        }
+
+       
+
+        .main_galeria {
+            height: 85vh;
+        }
+
+        /* .estilo_carousel {
+            height: 100%;
+            width: 280px;
+        }*/
+        
+        .estilo_carousel img {
+            height: 380px;
+            width: 200px;
+        
+        } 
+
+        button {
+            margin-bottom: 550px;
+        }
+
+}  
+
+
+/*-----------------------------------RESPONSIVE 480------------------------------------ */
+
+
+@media screen and (min-width:321px) and (max-width:480px) {
+
+    .medidas_contprinc {
+        margin: 0%;
+        padding: 0%;
+        min-width: 100%;
+        min-height: 170vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        max-height: 120px;
+        border-bottom: black;
+    }
+
+    header img {
+        grid-area: headerimg;
+        max-height: 90px;
+        width: 90px;
+    }
+
+    header h1 {
+        grid-area: headerh1;
+        font-size: 30px;
+        padding-left: 50px;
+    }
+
+    nav {
+        grid-area: nav;
+    }
+
+    .diseño_fondonav {
+        grid-area: nav;
+        background-color: white;
+        font-size: 13px;
+        border-bottom: solid grey 2px;
+    }
+
+    .menu_nav li a {
+        color: black;
+    }
+
+    .main_inicio {
+        display: flex;
+        flex-direction: column;
+        height: 390vh;
+    }
+
+    .main_texto {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+
+    .main_inicio_img {
+        display: flex;
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+
+    .iframe_ant247 {
+        display: flex;
+        flex-direction: column;
+        margin-top: 100px;
+        height: 340px;
+
+    }
+
+    .iframe_ham {
+        display: flex;
+        flex-direction: column;
+        margin-top: 100px;
+        height: 340px;
+    }
+
+
+    .iframe_tdv {
+        display: flex;
+        flex-direction: column;
+        margin-top: 100px;
+        height: 340px;
+
+    }
+
+    .estilo_iframe p {
+        font-size: 20px;
+    }
+
+
+
+    .medidas_contGale {
+        margin: 0%;
+        padding: 0%;
+        min-width: 100%;
+        min-height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .estilo_carousel img {
+        height: 380px;
+        width: 200px;
+
+    }
+
+    button {
+        margin-bottom: 550px;
+    }
+
+}
+
+/*-----------------------------------RESPONSIVE 600------------------------------------ */
+
+
+@media screen and (min-width:481px) and (max-width:600px) {
+
+    .medidas_contprinc {
+        margin: 0%;
+        padding: 0%;
+        min-width: 100%;
+        min-height: 170vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        max-height: 120px;
+        border-bottom: black;
+    }
+
+    header img {
+        grid-area: headerimg;
+        max-height: 90px;
+        width: 90px;
+    }
+
+    header h1 {
+        grid-area: headerh1;
+        font-size: 40px;
+        padding-left: 50px;
+        
+    }
+
+    nav {
+        grid-area: nav;
+    }
+
+    .diseño_fondonav {
+        grid-area: nav;
+        background-color: white;
+        font-size: 13px;
+        border-bottom: solid grey 2px;
+    }
+
+    .menu_nav li a {
+        color: black;
+    }
+
+    .main_inicio {
+        display: flex;
+        flex-direction: column;
+        height: 390vh;
+    }
+
+    .main_texto {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+
+    .main_inicio_img {
+        display: flex;
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+
+    .iframe_ant247 {
+        display: flex;
+        flex-direction: column;
+        margin-top: 100px;
+        height: 340px;
+
+    }
+
+    .iframe_ham {
+        display: flex;
+        flex-direction: column;
+        margin-top: 100px;
+        height: 340px;
+    }
+
+
+    .iframe_tdv {
+        display: flex;
+        flex-direction: column;
+        margin-top: 100px;
+        height: 340px;
+
+    }
+
+    .estilo_iframe p {
+        font-size: 20px;
+    }
+
+
+
+    .main_galeria {
+                height: 85vh;
+    }
+
+    /* .estilo_carousel {
+                height: 100%;
+                width: 280px;
+    }*/
+            
+    .estilo_carousel img {
+    height: 380px;
+    width: 200px;
+            
+    } 
+
+    button {
+    margin-bottom: 550px;
+    }
+
+}
+
+
+/*-----------------------------------RESPONSIVE 768------------------------------------ */
+
+
+
+@media screen and (min-width:601px) and (max-width:768px) {
+
+    .medidas_contprinc {
+        margin: 0%;
+        padding: 0%;
+        min-width: 100%;
+        min-height: 170vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        max-height: 120px;
+        border-bottom: black;
+    }
+
+    header img {
+        grid-area: headerimg;
+        max-height: 90px;
+        width: 90px;
+    }
+
+    header h1 {
+        grid-area: headerh1;
+        font-size: 45px;
+        padding-left: 50px;
+
+    }
+
+    nav {
+        grid-area: nav;
+    }
+
+    .diseño_fondonav {
+        grid-area: nav;
+        background-color: white;
+        font-size: 13px;
+        border-bottom: solid grey 2px;
+    }
+
+    .menu_nav li a {
+        color: black;
+    }
+
+    .main_inicio {
+        display: flex;
+        flex-direction: column;
+        height: 330vh;
+    }
+
+    .main_texto {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+
+    .main_inicio_img {
+        display: flex;
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+
+    .iframe_ant247 {
+        display: flex;
+        flex-direction: column;
+        margin-top: 100px;
+        height: 340px;
+
+    }
+
+    .iframe_ham {
+        display: flex;
+        flex-direction: column;
+        margin-top: 100px;
+        height: 340px;
+    }
+
+
+    .iframe_tdv {
+        display: flex;
+        flex-direction: column;
+        margin-top: 100px;
+        height: 340px;
+
+    }
+
+    .estilo_iframe p {
+        font-size: 20px;
+    }
+
+
+
+    .main_galeria {
+        height: 85vh;
+    }
+
+    /* .estilo_carousel {
+                height: 100%;
+                width: 280px;
+    }*/
+
+    .estilo_carousel img {
+        height: 380px;
+        width: 200px;
+
+    }
+
+    button {
+        margin-bottom: 550px;
+    }
+
+}
+
+
+
+
+
+/*-----------------------------------RESPONSIVE 1023------------------------------------ */
+
+
+
+@media screen and (min-width:769px) and (max-width:1023px) {
+
+    .medidas_contprinc {
+        margin: 0%;
+        padding: 0%;
+        min-width: 100%;
+        min-height: 170vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        max-height: 120px;
+        border-bottom: black;
+    }
+
+    header img {
+        grid-area: headerimg;
+        max-height: 90px;
+        width: 90px;
+    }
+
+    header h1 {
+        grid-area: headerh1;
+        font-size: 50px;
+        padding-left: 50px;
+
+    }
+
+    nav {
+        grid-area: nav;
+    }
+
+    .diseño_fondonav {
+        grid-area: nav;
+        background-color: white;
+        font-size: 13px;
+        border-bottom: solid grey 2px;
+    }
+
+    .menu_nav li a {
+        color: black;
+    }
+
+    .main_inicio {
+        display: flex;
+        flex-direction: column;
+        height: 210vh;
+    }
+
+    .main_texto {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+
+    .main_inicio_img {
+        display: flex;
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+
+    .iframe_ant247 {
+        display: flex;
+        flex-direction: column;
+        margin-top: 100px;
+        height: 340px;
+
+    }
+
+    .iframe_ham {
+        display: flex;
+        flex-direction: column;
+        margin-top: 100px;
+        height: 340px;
+    }
+
+
+    .iframe_tdv {
+        display: flex;
+        flex-direction: column;
+        margin-top: 100px;
+        height: 340px;
+
+    }
+
+    .estilo_iframe p {
+        font-size: 20px;
+    }
+
+
+
+    .main_galeria {
+        height: 85vh;
+    }
+
+    /* .estilo_carousel {
+                height: 100%;
+                width: 280px;
+    }*/
+
+    .estilo_carousel img {
+        height: 380px;
+        width: 280px;
+
+    }
+
+    button {
+        margin-bottom: 550px;
+    }
+
+}
+
+
+
+
+
+
+/*-----------------------------------RESPONSIVE 1200------------------------------------ */
+
+
+
+@media screen and (min-width:1024px) and (max-width:1200px) {
+
+    .medidas_contprinc {
+        margin: 0%;
+        padding: 0%;
+        min-width: 100%;
+        min-height: 170vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        max-height: 120px;
+        border-bottom: black;
+    }
+
+    header img {
+        grid-area: headerimg;
+        max-height: 90px;
+        width: 90px;
+    }
+
+    header h1 {
+        grid-area: headerh1;
+        font-size: 55px;
+        padding-left: 50px;
+
+    }
+
+    nav {
+        grid-area: nav;
+    }
+
+    .diseño_fondonav {
+        grid-area: nav;
+        background-color: white;
+        font-size: 13px;
+        border-bottom: solid grey 2px;
+    }
+
+    .menu_nav li a {
+        color: black;
+    }
+
+    .main_inicio {
+        display: flex;
+        flex-direction: column;
+        height: 210vh;
+    }
+
+    .main_texto {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+
+    .main_inicio_img {
+        display: flex;
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+
+    .iframe_ant247 {
+        display: flex;
+        flex-direction: column;
+        margin-top: 100px;
+        height: 340px;
+
+    }
+
+    .iframe_ham {
+        display: flex;
+        flex-direction: column;
+        margin-top: 100px;
+        height: 340px;
+    }
+
+
+    .iframe_tdv {
+        display: flex;
+        flex-direction: column;
+        margin-top: 100px;
+        height: 340px;
+
+    }
+
+    .estilo_iframe p {
+        font-size: 20px;
+    }
+
+
+
+    .main_galeria {
+        height: 85vh;
+    }
+
+    /* .estilo_carousel {
+                height: 100%;
+                width: 280px;
+    }*/
+
+    .estilo_carousel img {
+        height: 480px;
+        width: 380px;
+    }
+
+    button {
+        margin-bottom: 550px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
